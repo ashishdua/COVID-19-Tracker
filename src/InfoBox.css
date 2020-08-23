@@ -1,0 +1,65 @@
+.infoBox {
+    flex: 1;
+    cursor: pointer;
+    border-top: 10px solid #EEE;
+}
+
+.infoBox__dark {
+    background-color: #666 !important;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.infoBox__cases {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+    color: #6C757D;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+
+.infoBox__CasesBorderColor {
+    border-color: #FB4443;
+}
+
+.infoBox__DeathsBorderColor {
+    border-color: #CC1034;
+}
+
+.infoBox__RecoveredBorderColor {
+    border-color: #7DD71D;
+}
+
+.infoBox__CasesTextColor {
+    color: #FB4443;
+}
+
+.infoBox__DeathsTextColor {
+    color: #CC1034;
+}
+
+.infoBox__RecoveredTextColor {
+    color: #7DD71D;
+}
+
+.infoBox--notSelected {
+    border-color: #e2e2e2;
+}
+
+
+@media (max-width: 500px) {
+    .infoBox__cases {
+        font-size: 1rem;
+    }
+
+    .infoBox__title {
+        font-size: 0.8rem !important;
+    }
+}
