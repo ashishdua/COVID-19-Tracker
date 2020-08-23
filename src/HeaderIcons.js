@@ -33,7 +33,7 @@ function HeaderIcons({ themeType, ...props }) {
             </ClickAwayListener>
 
             {/* <Tooltip title="Data Source - https://disease.sh"><IconButton><Info className={commonClassName}></Info></IconButton></Tooltip> */}
-            <Tooltip title="Repo Link"><IconButton><GitHub className={commonClassName} onClick={e => window.open("https://github.com/ashishdua")}></GitHub></IconButton></Tooltip>
+            <Tooltip title="Repo Link"><IconButton><GitHub className={commonClassName} onClick={e => window.open("https://github.com/ashishdua/COVID-19-Tracker")}></GitHub></IconButton></Tooltip>
 
             <Tooltip title="Toggle light/dark theme">
                 <IconButton>

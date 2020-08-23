@@ -174,7 +174,8 @@ a:active {
     float: right;
   }
 
-  .app__commonHeaderIcon {
+  .app__commonHeaderIcon,
+  .app__commonHeaderIcon__dark {
     font-size: 1.2rem !important;
   }
 }
