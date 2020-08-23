@@ -1,65 +1,69 @@
 .infoBox {
-    flex: 1;
-    cursor: pointer;
-    border-top: 10px solid #EEE;
+  flex: 1;
+  cursor: pointer;
+  border-top: 10px solid #eee;
 }
 
 .infoBox__dark {
-    background-color: #666 !important;
+  background-color: #666 !important;
 }
 
 .infoBox:not(:last-child) {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .infoBox__cases {
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .infoBox__total {
-    color: #6C757D;
-    font-weight: 700 !important;
-    font-size: 0.8rem !important;
-    margin-top: 15px !important;
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
 }
 
 .infoBox__CasesBorderColor {
-    border-color: #FB4443;
+  border-color: #fb4443;
 }
 
 .infoBox__DeathsBorderColor {
-    border-color: #CC1034;
+  border-color: #cc1034;
 }
 
 .infoBox__RecoveredBorderColor {
-    border-color: #7DD71D;
+  border-color: #7dd71d;
 }
 
 .infoBox__CasesTextColor {
-    color: #FB4443;
+  color: #fb4443;
 }
 
 .infoBox__DeathsTextColor {
-    color: #CC1034;
+  color: #cc1034;
 }
 
 .infoBox__RecoveredTextColor {
-    color: #7DD71D;
+  color: #7dd71d;
 }
 
 .infoBox--notSelected {
-    border-color: #e2e2e2;
+  border-color: #e2e2e2;
 }
 
+.infoBox__title__dark,
+.infoBox__total__dark {
+  color: #fff !important;
+}
 
 @media (max-width: 500px) {
-    .infoBox__cases {
-        font-size: 1rem;
-    }
+  .infoBox__cases {
+    font-size: 1rem;
+  }
 
-    .infoBox__title {
-        font-size: 0.8rem !important;
-    }
+  .infoBox__title {
+    font-size: 0.8rem !important;
+  }
 }

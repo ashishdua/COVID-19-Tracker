@@ -120,15 +120,15 @@ function App() {
         </div>
 
         <div className="app_map">
-          <Map casesType={casesType} countries={mapCountries} center={mapCenter} zoom={mapZoom}></Map>
+          <Map themeType={themeType} casesType={casesType} countries={mapCountries} center={mapCenter} zoom={mapZoom}></Map>
         </div>
       </div >
 
-      <Card className="app__right">
+      <Card className={`app__right ${themeType === 'dark' ? "app__right__dark" : ''}`}>
         <CardContent>
-          <h3>Live Cases by Country</h3>
-          <Table countries={tableData}></Table>
-          <h3 className="app__graphTitle">Global New {capitalizeFirstLetter(casesType)}</h3>
+          <h3 className={`${themeType === 'dark' ? "app__right__title__dark" : ''}`}>Live Cases by Country</h3>
+          <Table themeType={themeType} countries={tableData}></Table>
+          <h3 className={`app__graphTitle ${themeType === 'dark' ? "app__right__title__dark" : ''}`}>Global New {capitalizeFirstLetter(casesType)}</h3>
           <LineGraph className="app__graph" casesType={casesType}></LineGraph>
         </CardContent>
       </Card>

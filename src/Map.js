@@ -3,10 +3,10 @@ import { Map as LeafletMap, TileLayer } from 'react-leaflet';
 import "./Map.css";
 import { showDataOnMap } from './util';
 
-function Map({ countries, casesType, center, zoom }) {
+function Map({ themeType, countries, casesType, center, zoom }) {
     
     return (
-        <div className="map">
+        <div className={`map ${themeType === 'dark' ? "map__dark" : ''}`}>
             <LeafletMap center={center} zoom={zoom}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -2,9 +2,9 @@ import React from 'react';
 import './Table.css';
 import numeral from 'numeral';
 
-function Table({ countries }) {
+function Table({ themeType, countries }) {
     return (
-        <div className="table">
+        <div className={`table ${themeType === 'dark' ? "table__dark" : ''}`}>
             {countries.map(country => (
                 <tr>
                     <img alt='' src={'https://www.countryflags.io/' + country.countryInfo.iso2 + '/flat/32.png'}></img>

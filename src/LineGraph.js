@@ -30,6 +30,7 @@ const options = {
                     format: "MM/DD/YY",
                     tooltipFormat: "ll",
                 },
+                color: "#FFF",
             },
         ],
         yAxes: [

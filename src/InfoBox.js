@@ -10,13 +10,13 @@ function InfoBox({ themeType, casesType, active, title, cases, total, ...props }
     return (
         <Card onClick={props.onClick} className={`infoBox ${themeType === 'dark' ? "infoBox__dark" : ''} ${active ? 'infoBox--selected' : 'infoBox--notSelected'} ${classNameObj.classNameForInfoBoxHeaderBorder}`} >
             <CardContent>
-                <Typography className="infoBox__title" color="textSecondary">
+                <Typography className={`infoBox__title ${themeType === 'dark' ? "infoBox__title__dark" : ''}`} color="textSecondary">
                     {title}
                 </Typography>
 
                 <h2 className={`infoBox__cases ${classNameObj.classNameForInfoBoxText}`}>{cases}</h2>
 
-                <Typography className="infoBox__total" color="textSecondary">
+                <Typography className={`infoBox__total ${themeType === 'dark' ? "infoBox__total__dark" : ''}`} color="textSecondary">
                     {total} Total
                 </Typography>
             </CardContent>

@@ -1,6 +1,6 @@
 .table {
     margin-top: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 400px;
     color: #6a5d5d;
 }
@@ -15,6 +15,23 @@
 
 .table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
+}
+
+.table__dark {
+    background-color: #666;
+    scrollbar-color: dark !important;
+}
+
+.table__dark tr {
+    color: #FFF;
+}
+
+.table__dark tr:nth-of-type(odd) {
+    background-color: #666;
+}
+
+.table__dark tr:nth-of-type(even) {
+    background-color: #2C3034;
 }
 
 .table__countryFlag {

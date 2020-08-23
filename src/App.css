@@ -98,6 +98,10 @@ body {
   flex-direction: column;
 }
 
+.app__right__dark {
+  background-color: #666 !important;
+}
+
 .app__right .MuiCardContent-root {
   display: flex;
   flex-direction: column;
@@ -106,10 +110,15 @@ body {
 
 .app__graph {
   flex-grow: 1;
+  background-color: #FFF;
 }
 
 .app__graphTitle {
   margin-top: 20px;
+}
+
+.app__right__title__dark {
+  color: #FFF;
 }
 
 .app__commonHeaderIcon {
